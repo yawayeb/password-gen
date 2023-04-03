@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: center;
+}
+
+body {
+    background: #96D4CA;
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: 300px;
+    margin-top: 30px;
+    background: #7C65A9;
+    padding: 2rem 1rem;
+    margin-bottom: 30px;
+}
+
+.heading h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Karla', sans-serif;
+    line-height: 38px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.heading h1 span {
+    color: #4ADF86;
+}
+
+.heading p {
+    text-align: center;
+    font-size: 22px;
+    line-height: 25px;
+    color: #D5D4D8;
+    margin-bottom: 40px;
+
+}
+
+.heading {
+    border-bottom: 1px solid #2F3E53;
+    margin-bottom: 40px;
+}
+
+#generatePassword-btn,
+#copy-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 191px;
+    height: 40px;
+    background: #10B981;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+
+#password {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 259px;
+    height: 40px;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    background: #273549;
+    padding: 0.5rem 1rem;
+    color: #4ADF86;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#copy-btn {
+    margin-bottom: 34px;
+}
+
+.gen-password-container {
+    border-bottom: 2px solid #10B981;
+    margin-bottom: 20px;
+}
+
+.password-choice {
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #10B981;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    cursor: pointer;
+    font-size: 18px;
+    color: #D5D4D8;
+}
+
+.form-control input[type="number"] {
+    width: 90px;
+    height: 25px;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    font-size: 16px;
+    color: #000000;
+    
+}
+
+input[type="checkbox"] {
+    width: 23px;
+    height: 23px;
+    border-radius: 6px;
+    
+}
+
+
+.author {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffffa0;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: .3s ease-in;
+}
+
+
+#success-pop-overlay,
+#error-pop-overlay  {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0, 0.5);
+    transition: 0.5s;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+}
+
+.pop-box-container {
+    background: #ffffff;
+    width: 230px;
+    height: 50vh;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-122px);
+    border-radius: 6px;
+    padding: 1.6rem 1rem;
+}
+
+.fa-circle-check {
+    background-color: #fdfdfd;
+    color: green;
+    font-size: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.303);
+    margin-bottom: 30px;
+}
+
+.popup-message-container h2 {
+    font-size: 25px;
+    margin-bottom: 7px;
+    letter-spacing: 1px;
+}
+
+.popup-message-container p {
+    font-size: 16px;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.pop-box-container button {
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    background: #10B981;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#error-pop-overlay .pop-box-container {
+    height: 55vh;
+    top: 15%;
+}
+
+#error-pop-overlay h2 {
+    letter-spacing: 1px;
+}
+
+#error-pop-overlay p {
+    color: red;
+}
+
+.fa-xmark {
+    background-color: #fdfdfd;
+    color: red;
+    width: 56px;
+    height: 55px;
+    font-size: 50px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 2px solid red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.303);
+    text-align: center;
+}
+
+@media (min-width: 780px) {
+    body {
+        background: #96D4CA;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Inter', sans-serif;
+    
+    }
+    
+}
+
