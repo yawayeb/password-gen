@@ -3,6 +3,7 @@
     padding: 0;
     border: none;
     text-align: center;
+  box-sizing: border-box;
 }
 
 body {
@@ -63,17 +64,18 @@ body {
     margin-bottom: 45px;
 }
 
-#password {
+#password, #pass__out {
     display: block;
+    padding: 2rem;
     margin-left: auto;
     margin-right: auto;
-    width: 259px;
-    height: 40px;
+/*     width: 259px;
+    height: 40px; */
     outline: none;
     border-radius: 6px;
     border: none;
     background: #273549;
-    padding: 0.5rem 1rem;
+/*     padding: 0.5rem 1rem; */
     color: #4ADF86;
     font-size: 16px;
     margin-bottom: 10px;
